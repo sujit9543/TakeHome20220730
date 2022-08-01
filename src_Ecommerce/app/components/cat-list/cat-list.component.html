@@ -1,0 +1,38 @@
+<!-- <p>cat-list works!</p> -->
+
+<div class="container">
+    <br>
+    <a type="button" routerLink="/categoryform" class="btn btn-warning">Add Category</a>
+
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <a routerLink="" type="button" class="btn btn-warning">Home</a>
+    <br>
+    <br>
+    <br>
+    <h4>Category List</h4>
+    <br>
+    <br>
+    <table class="table table-danger ">
+        <tr>
+            <th>Category ID</th>
+            <th>Category Name</th>
+        
+            </tr>
+
+            <tr *ngFor="let cat of categories" >
+                <td>{{cat.categoryid}}</td>
+                <td>{{cat.categoryname}}</td>
+        
+            </tr>
+    </table>
+
+
